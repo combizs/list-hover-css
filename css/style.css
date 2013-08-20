@@ -1,0 +1,39 @@
+    ul, li {
+      list-style-type: none;
+    }
+
+    /*  give the UL a width and add hidden overflow to create a 'boundary' layout for the list elements to fit within  */
+    ul {
+      width: 300px;
+      padding: 15px;
+      overflow: hidden;
+    }
+
+    /*  css required to dim when mouse goes over UL; li is required at the end  */
+    ul:hover li {
+      opacity: 0.5;
+      -webkit-transition: all 0.5s ease;
+      -moz-transition: all 0.5s ease;
+      -ms-transition: all 0.5s ease;
+      -o-transition: all 0.5s ease;
+      transition: all 0.5s ease;
+    }
+
+    /*  add width and height to define the 'box' size for each list item  */
+    li {
+      width: 80px;
+      height: 80px;
+      float: left;
+      padding: 10px;
+      clear: none;
+    }
+
+    /*  add opacity 100% AND important to override UL hover effect  */
+    li:hover {
+      opacity: 1.0!important;
+      -webkit-transition: all 0.5s ease;
+      -moz-transition: all 0.5s ease;
+      -ms-transition: all 0.5s ease;
+      -o-transition: all 0.5s ease;
+      transition: all 0.5s ease;
+    }
